@@ -3,20 +3,25 @@
 #ifndef supervisionH
 #define supervisionH
 #include <string>
+#include <vcl.h>
+#include <StringUtils.h>
+
+
 using namespace std;
 //---------------------------------------------------------------------------
 class supervision
 {
 	private:
-	string mode,plaque,login,mdp,horodatage,proprietaire;
+	UnicodeString mode;
 	public:
-	bool compare_plaque(string,string);
-	void export_();
-	void mode_individuel();
-	void mode_ouvert();
-	void enregistrement_parametre();
-	void affichage_acces(string,string,string);
+	void export_(string,string,string);
+	void enregistrement_parametre(UnicodeString);
+	UnicodeString getmode();
+
+
 	supervision();
+	~supervision();
+	StringUtils *conversion;
 
 
 };

@@ -3,14 +3,16 @@
 #ifndef pilotageH
 #define pilotageH
 #include <string>
+#include <vcl.h>
 //---------------------------------------------------------------------------
 using namespace std;
 class pilotage
 {
-   string etat;
+   UnicodeString etat;
    public:
-   string ouverture();
-   string fermeture();
+   UnicodeString ouverture();
+   UnicodeString fermeture();
+   UnicodeString getetat();
    pilotage();
 };
 #endif

@@ -9,14 +9,19 @@ admin::admin()
 	 this->identifiant="";
 	 this->mdp="";
 }
-bool admin::connexion(string id,string mdp)
+bool admin::connexion(UnicodeString id,UnicodeString mdp)
 {
-	bool compare=true;
-
-	return compare;
+	//recup de la bdd
+	 UnicodeString idbdd="admin";
+	 UnicodeString mdpbdd="root";
+   if((idbdd==id)&&(mdpbdd==mdp))
+   {
+	 return true;
+   }
+   else
+   {
+	   return false;
+   }
 }
-void admin::deconnexion()
-{
 
-}
 #pragma package(smart_init)

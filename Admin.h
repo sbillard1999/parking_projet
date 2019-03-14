@@ -3,6 +3,7 @@
 #ifndef AdminH
 #define AdminH
 #include <string>
+#include <vcl.h>
 using namespace std;
 //---------------------------------------------------------------------------
 class admin
@@ -10,7 +11,7 @@ class admin
    string identifiant,mdp;
    public:
    admin();
-   bool connexion(string,string);
+   bool connexion(UnicodeString,UnicodeString);
    void deconnexion();
 };
 #endif
