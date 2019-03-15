@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2019/03/07 10:29:24.000.545,=C:\Users\Sabrina Billard\Documents\Embarcadero\Studio\Projets\Unit1.cpp</Transaction>
+    <Transaction>2019/03/07 10:29:24.000.531,=C:\Users\Sabrina Billard\Documents\Embarcadero\Studio\Projets\Project1PCH1.h</Transaction>
+    <Transaction>2019/03/07 10:52:57.000.457,C:\Users\Sabrina Billard\Documents\Embarcadero\Studio\Projets\supervision.cpp=C:\Users\Sabrina Billard\Documents\Embarcadero\Studio\Projets\Unit1.cpp</Transaction>
+    <Transaction>2019/03/07 10:52:57.000.457,C:\Users\Sabrina Billard\Documents\Embarcadero\Studio\Projets\supervision.dfm=C:\Users\Sabrina Billard\Documents\Embarcadero\Studio\Projets\Unit1.dfm</Transaction>
+    <Transaction>2019/03/07 10:52:57.000.457,C:\Users\Sabrina Billard\Documents\Embarcadero\Studio\Projets\supervision.h=C:\Users\Sabrina Billard\Documents\Embarcadero\Studio\Projets\Unit1.h</Transaction>
+    <Transaction>2019/03/07 11:32:54.000.933,C:\Users\Sabrina Billard\Desktop\parking_classe\supervision.h=C:\Users\Sabrina Billard\Documents\Embarcadero\Studio\Projets\supervision.h</Transaction>
+    <Transaction>2019/03/07 11:32:54.000.933,C:\Users\Sabrina Billard\Desktop\parking_classe\supervision.cpp=C:\Users\Sabrina Billard\Documents\Embarcadero\Studio\Projets\supervision.cpp</Transaction>
+    <Transaction>2019/03/07 11:32:54.000.933,C:\Users\Sabrina Billard\Desktop\parking_classe\supervision.dfm=C:\Users\Sabrina Billard\Documents\Embarcadero\Studio\Projets\supervision.dfm</Transaction>
+    <Transaction>2019/03/07 11:32:56.000.412,C:\Users\Sabrina Billard\Desktop\parking_classe\Project1PCH1.h=C:\Users\Sabrina Billard\Documents\Embarcadero\Studio\Projets\Project1PCH1.h</Transaction>
+    <Transaction>2019/03/07 11:32:57.000.421,C:\Users\Sabrina Billard\Desktop\parking_classe\Project1.cbproj=C:\Users\Sabrina Billard\Documents\Embarcadero\Studio\Projets\Project1.cbproj</Transaction>
+    <Transaction>2019/03/07 14:10:38.000.280,=C:\Users\Sabrina Billard\Desktop\parking_classe\Unit1.cpp</Transaction>
+    <Transaction>2019/03/07 14:10:47.000.530,C:\Users\Sabrina Billard\Desktop\parking_classe\pilotage.cpp=C:\Users\Sabrina Billard\Desktop\parking_classe\Unit1.cpp</Transaction>
+    <Transaction>2019/03/07 14:10:47.000.530,C:\Users\Sabrina Billard\Desktop\parking_classe\pilotage.h=C:\Users\Sabrina Billard\Desktop\parking_classe\Unit1.h</Transaction>
+    <Transaction>2019/03/07 14:22:17.000.082,=C:\Users\Sabrina Billard\Desktop\parking_classe\Unit1.cpp</Transaction>
+    <Transaction>2019/03/07 14:22:25.000.381,C:\Users\Sabrina Billard\Desktop\parking_classe\Admin.cpp=C:\Users\Sabrina Billard\Desktop\parking_classe\Unit1.cpp</Transaction>
+    <Transaction>2019/03/07 14:22:25.000.381,C:\Users\Sabrina Billard\Desktop\parking_classe\Admin.h=C:\Users\Sabrina Billard\Desktop\parking_classe\Unit1.h</Transaction>
+    <Transaction>2019/03/07 14:30:38.000.263,=C:\Users\Sabrina Billard\Desktop\parking_classe\Unit1.cpp</Transaction>
+    <Transaction>2019/03/07 14:30:57.000.068,C:\Users\Sabrina Billard\Desktop\parking_classe\TCP_IP_Client.h=C:\Users\Sabrina Billard\Desktop\parking_classe\Unit1.h</Transaction>
+    <Transaction>2019/03/07 14:30:57.000.068,C:\Users\Sabrina Billard\Desktop\parking_classe\TCP_IP_Client.cpp=C:\Users\Sabrina Billard\Desktop\parking_classe\Unit1.cpp</Transaction>
+    <Transaction>2019/03/07 15:27:59.000.789,C:\Users\Sabrina Billard\Desktop\parking_classe\ihm.dfm=C:\Users\Sabrina Billard\Desktop\parking_classe\supervision.dfm</Transaction>
+    <Transaction>2019/03/07 15:27:59.000.789,C:\Users\Sabrina Billard\Desktop\parking_classe\ihm.cpp=C:\Users\Sabrina Billard\Desktop\parking_classe\supervision.cpp</Transaction>
+    <Transaction>2019/03/07 15:27:59.000.789,C:\Users\Sabrina Billard\Desktop\parking_classe\ihm.h=C:\Users\Sabrina Billard\Desktop\parking_classe\supervision.h</Transaction>
+    <Transaction>2019/03/07 15:28:10.000.208,=C:\Users\Sabrina Billard\Desktop\parking_classe\Unit1.cpp</Transaction>
+    <Transaction>2019/03/07 15:28:18.000.106,C:\Users\Sabrina Billard\Desktop\parking_classe\supervision.cpp=C:\Users\Sabrina Billard\Desktop\parking_classe\Unit1.cpp</Transaction>
+    <Transaction>2019/03/07 15:28:18.000.106,C:\Users\Sabrina Billard\Desktop\parking_classe\supervision.h=C:\Users\Sabrina Billard\Desktop\parking_classe\Unit1.h</Transaction>
+    <Transaction>2019/03/12 14:48:39.000.838,=C:\Users\Sabrina Billard\Desktop\classe char\StringUtils.cpp</Transaction>
+  </Transactions>
+</BorlandProject>

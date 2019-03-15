@@ -1,0 +1,239 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 418
+  ClientWidth = 879
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  Menu = menu
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object titre: TLabel
+    Left = 88
+    Top = 32
+    Width = 475
+    Height = 39
+    Caption = 'Affichage de la liste des acc'#232's'
+    Color = clHotLight
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -32
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Visible = False
+  end
+  object message: TLabel
+    Left = 504
+    Top = 364
+    Width = 318
+    Height = 25
+    Caption = 'Les donn'#233'es ont '#233't'#233' export'#233'es'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    Visible = False
+  end
+  object labelmode: TLabel
+    Left = 48
+    Top = 153
+    Width = 193
+    Height = 81
+    Caption = 'Mode :'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -64
+    Font.Name = 'Trebuchet MS'
+    Font.Style = []
+    ParentFont = False
+    Visible = False
+  end
+  object labelconnexion: TLabel
+    Left = 373
+    Top = 61
+    Width = 249
+    Height = 61
+    Caption = 'Connexion'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -48
+    Font.Name = 'Microsoft JhengHei UI'
+    Font.Style = [fsBold, fsItalic]
+    ParentFont = False
+  end
+  object labelsauvegardemode: TLabel
+    Left = 520
+    Top = 263
+    Width = 356
+    Height = 27
+    Caption = 'Les modifications ont '#233't'#233' sauvegard'#233
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Tempus Sans ITC'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object proprietaire: TMemo
+    Left = 32
+    Top = 128
+    Width = 169
+    Height = 129
+    Lines.Strings = (
+      'proprietaire')
+    ScrollBars = ssVertical
+    TabOrder = 0
+    Visible = False
+  end
+  object plaque: TMemo
+    Left = 272
+    Top = 128
+    Width = 185
+    Height = 129
+    Lines.Strings = (
+      'plaque')
+    ScrollBars = ssVertical
+    TabOrder = 1
+    Visible = False
+  end
+  object horodatage: TMemo
+    Left = 520
+    Top = 128
+    Width = 177
+    Height = 129
+    Lines.Strings = (
+      'horodatage')
+    ReadOnly = True
+    ScrollBars = ssVertical
+    TabOrder = 2
+    Visible = False
+  end
+  object export_: TButton
+    Left = 568
+    Top = 296
+    Width = 129
+    Height = 49
+    Caption = 'exporter'
+    TabOrder = 3
+    Visible = False
+    OnClick = export_Click
+  end
+  object buttonmode: TButton
+    Left = 552
+    Top = 176
+    Width = 233
+    Height = 57
+    Caption = 'sauvegarder'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -35
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 4
+    Visible = False
+    OnClick = buttonmodeClick
+  end
+  object listmode: TListBox
+    Left = 272
+    Top = 128
+    Width = 202
+    Height = 144
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -32
+    Font.Name = 'Trebuchet MS'
+    Font.Style = []
+    ItemHeight = 40
+    Items.Strings = (
+      'Automatique'
+      'Manuel'
+      'overopen')
+    ParentFont = False
+    TabOrder = 5
+    Visible = False
+  end
+  object id: TEdit
+    Left = 312
+    Top = 153
+    Width = 330
+    Height = 35
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Tempus Sans ITC'
+    Font.Style = [fsItalic]
+    ParentFont = False
+    TabOrder = 6
+    Text = 'identifiant'
+  end
+  object mdp: TEdit
+    Left = 312
+    Top = 217
+    Width = 330
+    Height = 32
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Tempus Sans ITC'
+    Font.Style = [fsItalic]
+    ParentFont = False
+    ParentShowHint = False
+    PasswordChar = '*'
+    ShowHint = False
+    TabOrder = 7
+    Text = 'mot de passe'
+  end
+  object buttonconnexion: TButton
+    Left = 400
+    Top = 302
+    Width = 242
+    Height = 56
+    Caption = 'Se connecter'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Trebuchet MS'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 8
+    OnClick = buttonconnexionClick
+  end
+  object menu: TMainMenu
+    Left = 8
+    Top = 8
+    object Afficherlesaccs1: TMenuItem
+      Caption = 'Afficher les acc'#232's'
+      Visible = False
+      OnClick = Afficherlesaccs1Click
+    end
+    object Parametre1: TMenuItem
+      Caption = 'Parametre'
+      Visible = False
+      OnClick = Parametre1Click
+    end
+    object Demarrage1: TMenuItem
+      Caption = 'Demarrage'
+      OnClick = Demarrage1Click
+    end
+  end
+  object client: TIdTCPClient
+    ConnectTimeout = 0
+    Host = '192.168.65.6'
+    IPVersion = Id_IPv4
+    Port = 9012
+    ReadTimeout = -1
+    Left = 776
+    Top = 64
+  end
+end
