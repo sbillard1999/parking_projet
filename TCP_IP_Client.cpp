@@ -9,12 +9,11 @@ TCP_IP_Client::TCP_IP_Client()
 
 }
 
-bool TCP_IP_Client::connexion(TIdTCPClient client,unsigned short host,unsigned short port)
+bool TCP_IP_Client::connexion(TIdTCPClient *client)
 {
-   client.Host=host;
-   client.Port=port;
-   client.Connect();
-   if(client.Connected()==true)
+
+   client->Connect();
+   if(client->Connected()==true)
    {
 	   return true;
    }
@@ -23,17 +22,13 @@ bool TCP_IP_Client::connexion(TIdTCPClient client,unsigned short host,unsigned s
 	   return false;
    }
 
+}
 
-}
-void TCP_IP_Client::deconnexion(TIdTCPClient client)
-{
-   client.Disconnect();
-}
-bool TCP_IP_Client::Ecriture(TIdTCPClient client)
+bool TCP_IP_Client::Ecriture(TIdTCPClient *client,UnicodeString etat)
 {
 
-  UnicodeString etat=decision.getetat();
-  client.Socket->WriteLn(etat);
+
+  client->Socket->WriteLn(etat);
 }
 
 #pragma package(smart_init)

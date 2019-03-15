@@ -18,9 +18,8 @@ class TCP_IP_Client
 	public:
 	TCP_IP_Client();
 	pilotage decision;
-	bool Ecriture(TIdTCPClient);
-	bool connexion(TIdTCPClient,unsigned short,unsigned short);
-	void deconnexion(TIdTCPClient);
+	bool Ecriture(TIdTCPClient*,UnicodeString);
+	bool connexion(TIdTCPClient*);
 
 };
 #endif

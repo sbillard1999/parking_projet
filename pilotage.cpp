@@ -4,23 +4,20 @@
 
 #include "pilotage.h"
 //---------------------------------------------------------------------------
-UnicodeString pilotage::ouverture()
+
+void pilotage::ouverture()
 {
-	this->etat="ouvert";
-	return etat;
+	this->etat="ouverture";
+
 }
-UnicodeString pilotage::fermeture()
+void pilotage::fermeture()
 {
-	this->etat="fermé";
-	return etat;
+	this->etat="fermeture";
 }
 UnicodeString pilotage::getetat()
 {
 	return this->etat;
 }
-pilotage::pilotage()
-{
-  this->etat="fermé";
-}
+
 
 #pragma package(smart_init)

@@ -48,6 +48,27 @@ supervision::supervision()
   mode="automatique";
   conversion=new StringUtils;
 }
+bool supervision::compare_plaque(vector<UnicodeString>plaquebase,UnicodeString plaquelu)
+{
+	int valider=0;
+	for(int i=0;i<plaquebase.size();i++)
+	{
+		if(plaquelu==plaquebase[i])
+		{
+		  valider++;
+		}
+	}
+	if(valider>0)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+    }
+
+
+}
 supervision::~supervision()
 {
 

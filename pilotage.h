@@ -10,9 +10,9 @@ class pilotage
 {
    UnicodeString etat;
    public:
-   UnicodeString ouverture();
-   UnicodeString fermeture();
+   void ouverture();
+   void fermeture();
    UnicodeString getetat();
-   pilotage();
+
 };
 #endif
