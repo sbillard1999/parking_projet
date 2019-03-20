@@ -27,5 +27,29 @@
     <Transaction>2019/03/07 15:28:18.000.106,C:\Users\Sabrina Billard\Desktop\parking_classe\supervision.cpp=C:\Users\Sabrina Billard\Desktop\parking_classe\Unit1.cpp</Transaction>
     <Transaction>2019/03/07 15:28:18.000.106,C:\Users\Sabrina Billard\Desktop\parking_classe\supervision.h=C:\Users\Sabrina Billard\Desktop\parking_classe\Unit1.h</Transaction>
     <Transaction>2019/03/12 14:48:39.000.838,=C:\Users\Sabrina Billard\Desktop\classe char\StringUtils.cpp</Transaction>
-  </Transactions>
+  </Transactions>  <ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="..\..\projet fin d'année"/>
+    <File Path="..\classe char"/>
+    <File Path="..\classe char\StringUtils.cpp"/>
+    <File Path="..\classe char\StringUtils.cpp"/>
+    <File Path="..\classe char\StringUtils.h"/>
+    <File Path="Admin.cpp"/>
+    <File Path="Admin.cpp"/>
+    <File Path="Admin.h"/>
+    <File Path="ihm.cpp"/>
+    <File Path="ihm.cpp"/>
+    <File Path="ihm.dfm"/>
+    <File Path="ihm.h"/>
+    <File Path="pilotage.cpp"/>
+    <File Path="pilotage.cpp"/>
+    <File Path="pilotage.h"/>
+    <File Path="Project1.cpp"/>
+    <File Path="Project1PCH1.h"/>
+    <File Path="supervision.cpp"/>
+    <File Path="supervision.cpp"/>
+    <File Path="supervision.h"/>
+    <File Path="TCP_IP_Client.cpp"/>
+    <File Path="TCP_IP_Client.cpp"/>
+    <File Path="TCP_IP_Client.h"/>
+  </ProjectSortOrder>
 </BorlandProject>

@@ -1,0 +1,46 @@
+//---------------------------------------------------------------------------
+
+#pragma hdrstop
+
+#include "supervision.h"
+#include <fstream>
+#include <iostream>
+//---------------------------------------------------------------------------
+bool supervision::compare_plaque(string plaque_lu,string plaque_bdd)
+{
+
+	int reponse_bdd=0;
+	if(reponse_bdd==0)
+	{
+		  return false;
+	}
+	else
+	{
+		return true;
+	}
+
+
+}
+void supervision::export_(string horodatage,string proprietaire,string plaque)
+{
+  ofstream fichier("export.txt", ios::out | ios::app);  //déclaration du flux et ouverture du fichier
+
+		if(fichier)  // si l'ouverture a réussi
+		{
+			// instructions
+			fichier << proprietaire << plaque << horodatage << endl;
+			fichier.close();  // on referme le fichier
+		}
+}
+
+void supervision::enregistrement_parametre()
+{
+
+}
+
+
+supervision::supervision()
+{
+
+}
+#pragma package(smart_init)

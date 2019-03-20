@@ -26,8 +26,6 @@ bool TCP_IP_Client::connexion(TIdTCPClient *client)
 
 bool TCP_IP_Client::Ecriture(TIdTCPClient *client,UnicodeString etat)
 {
-
-
   client->Socket->WriteLn(etat);
 }
 

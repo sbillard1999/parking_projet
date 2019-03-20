@@ -1,9 +1,9 @@
-object Form1: TForm1
+object demarrage: Tdemarrage
   Left = 0
   Top = 0
-  Caption = 'Form1'
-  ClientHeight = 418
-  ClientWidth = 879
+  Caption = 'demarrage'
+  ClientHeight = 421
+  ClientWidth = 900
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -83,6 +83,28 @@ object Form1: TForm1
     Font.Name = 'Tempus Sans ITC'
     Font.Style = [fsBold]
     ParentFont = False
+  end
+  object msgco: TLabel
+    Left = 373
+    Top = 375
+    Width = 497
+    Height = 31
+    Caption = 'message'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -27
+    Font.Name = 'Tw Cen MT'
+    Font.Style = [fsBold]
+    ParentFont = False
+    Visible = False
+  end
+  object Recherche: TLabel
+    Left = 680
+    Top = 27
+    Width = 51
+    Height = 13
+    Caption = 'Recherche'
+    Visible = False
   end
   object proprietaire: TMemo
     Left = 32
@@ -209,6 +231,89 @@ object Form1: TForm1
     TabOrder = 8
     OnClick = buttonconnexionClick
   end
+  object connexiontcp: TButton
+    Left = 88
+    Top = 45
+    Width = 328
+    Height = 90
+    Caption = 'Connexion_TCP'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -37
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 9
+    Visible = False
+    OnClick = connexiontcpClick
+  end
+  object demarrageprog: TButton
+    Left = 48
+    Top = 161
+    Width = 393
+    Height = 73
+    Caption = 'Demarrage'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 10
+    Visible = False
+    OnClick = demarrageprogClick
+  end
+  object ouvrir: TButton
+    Left = 520
+    Top = 263
+    Width = 347
+    Height = 95
+    Caption = 'Ouvrir'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -29
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 11
+    Visible = False
+    OnClick = ouvrirClick
+  end
+  object fermer: TButton
+    Left = 88
+    Top = 263
+    Width = 347
+    Height = 91
+    Caption = 'Fermer'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -29
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 12
+    Visible = False
+    OnClick = fermerClick
+  end
+  object editrecherche: TEdit
+    Left = 736
+    Top = 24
+    Width = 121
+    Height = 21
+    TabOrder = 13
+    Text = 'editrecherche'
+    Visible = False
+  end
+  object buttonrecherche: TButton
+    Left = 817
+    Top = 61
+    Width = 75
+    Height = 25
+    Caption = 'rechercher'
+    TabOrder = 14
+    Visible = False
+    OnClick = buttonrechercheClick
+  end
   object menu: TMainMenu
     Left = 8
     Top = 8
@@ -224,7 +329,13 @@ object Form1: TForm1
     end
     object Demarrage1: TMenuItem
       Caption = 'Demarrage'
+      Visible = False
       OnClick = Demarrage1Click
+    end
+    object Manuel1: TMenuItem
+      Caption = 'Manuel'
+      Visible = False
+      OnClick = Manuel1Click
     end
   end
   object client: TIdTCPClient

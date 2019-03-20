@@ -1,0 +1,28 @@
+//---------------------------------------------------------------------------
+
+#ifndef supervisionH
+#define supervisionH
+#include <string>
+#include <vcl.h>
+#include <StringUtils.h>
+
+
+using namespace std;
+//---------------------------------------------------------------------------
+class supervision
+{
+	private:
+	UnicodeString mode;
+	public:
+	bool compare_plaque(string,string);
+	void export_(string,string,string);
+	void enregistrement_parametre(UnicodeString mode);
+
+
+	supervision();
+	~supervision();
+	StringUtils *conversion;
+
+
+};
+#endif

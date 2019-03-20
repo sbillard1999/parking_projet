@@ -19,5 +19,4 @@ UnicodeString pilotage::getetat()
 	return this->etat;
 }
 
-
 #pragma package(smart_init)

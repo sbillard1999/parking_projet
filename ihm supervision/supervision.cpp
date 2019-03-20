@@ -33,7 +33,7 @@ void supervision::enregistrement_parametre(UnicodeString mode)
 		{
 			// instructions
 			fichier << "mode"<< " " << modee << endl;
-			fichier.close();  // on referme le fichier
+			fichier.close(); // on referme le fichier
 		}
 		this->mode=mode;
 		delete modee;
