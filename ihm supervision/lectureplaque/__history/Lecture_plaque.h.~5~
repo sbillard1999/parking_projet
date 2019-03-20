@@ -1,0 +1,23 @@
+/******************************************************************************/
+/*				 	Classe réalisée par Piat Solène							  */
+/*						 Classe Lecture_plaque								  */
+/*																			  */
+/******************************************************************************/
+//---------------------------------------------------------------------------
+
+#ifndef Lecture_plaqueH
+#define Lecture_plaqueH
+//---------------------------------------------------------------------------
+#endif
+class Lecture_plaque{
+
+	private:
+		Camera * acquisition;
+
+
+	public:
+		Lecture_plaque();
+		char Lire_acquisition();
+
+
+}
