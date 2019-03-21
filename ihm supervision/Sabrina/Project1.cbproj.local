@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2019/03/07 10:29:24.000.531,=C:\Users\Sabrina Billard\Documents\Embarcadero\Studio\Projets\Project1PCH1.h</Transaction>
+    <Transaction>2019/03/07 10:29:24.000.545,=C:\Users\Sabrina Billard\Documents\Embarcadero\Studio\Projets\Unit1.cpp</Transaction>
+    <Transaction>2019/03/07 10:52:57.000.457,C:\Users\Sabrina Billard\Documents\Embarcadero\Studio\Projets\Unit1.dfm=C:\Users\Sabrina Billard\Documents\Embarcadero\Studio\Projets\supervision.dfm</Transaction>
+    <Transaction>2019/03/07 10:52:57.000.457,C:\Users\Sabrina Billard\Documents\Embarcadero\Studio\Projets\Unit1.h=C:\Users\Sabrina Billard\Documents\Embarcadero\Studio\Projets\supervision.h</Transaction>
+    <Transaction>2019/03/07 10:52:57.000.457,C:\Users\Sabrina Billard\Documents\Embarcadero\Studio\Projets\Unit1.cpp=C:\Users\Sabrina Billard\Documents\Embarcadero\Studio\Projets\supervision.cpp</Transaction>
+    <Transaction>2019/03/07 11:32:54.000.933,C:\Users\Sabrina Billard\Documents\Embarcadero\Studio\Projets\supervision.cpp=C:\Users\Sabrina Billard\Desktop\parking_classe\supervision.cpp</Transaction>
+    <Transaction>2019/03/07 11:32:54.000.933,C:\Users\Sabrina Billard\Documents\Embarcadero\Studio\Projets\supervision.dfm=C:\Users\Sabrina Billard\Desktop\parking_classe\supervision.dfm</Transaction>
+    <Transaction>2019/03/07 11:32:54.000.933,C:\Users\Sabrina Billard\Documents\Embarcadero\Studio\Projets\supervision.h=C:\Users\Sabrina Billard\Desktop\parking_classe\supervision.h</Transaction>
+    <Transaction>2019/03/07 11:32:56.000.412,C:\Users\Sabrina Billard\Documents\Embarcadero\Studio\Projets\Project1PCH1.h=C:\Users\Sabrina Billard\Desktop\parking_classe\Project1PCH1.h</Transaction>
+    <Transaction>2019/03/07 11:32:57.000.421,C:\Users\Sabrina Billard\Documents\Embarcadero\Studio\Projets\Project1.cbproj=C:\Users\Sabrina Billard\Desktop\parking_classe\Project1.cbproj</Transaction>
+    <Transaction>2019/03/07 14:10:38.000.280,=C:\Users\Sabrina Billard\Desktop\parking_classe\Unit1.cpp</Transaction>
+    <Transaction>2019/03/07 14:10:47.000.530,C:\Users\Sabrina Billard\Desktop\parking_classe\Unit1.cpp=C:\Users\Sabrina Billard\Desktop\parking_classe\pilotage.cpp</Transaction>
+    <Transaction>2019/03/07 14:10:47.000.530,C:\Users\Sabrina Billard\Desktop\parking_classe\Unit1.h=C:\Users\Sabrina Billard\Desktop\parking_classe\pilotage.h</Transaction>
+    <Transaction>2019/03/07 14:22:17.000.082,=C:\Users\Sabrina Billard\Desktop\parking_classe\Unit1.cpp</Transaction>
+    <Transaction>2019/03/07 14:22:25.000.381,C:\Users\Sabrina Billard\Desktop\parking_classe\Unit1.cpp=C:\Users\Sabrina Billard\Desktop\parking_classe\Admin.cpp</Transaction>
+    <Transaction>2019/03/07 14:22:25.000.381,C:\Users\Sabrina Billard\Desktop\parking_classe\Unit1.h=C:\Users\Sabrina Billard\Desktop\parking_classe\Admin.h</Transaction>
+    <Transaction>2019/03/07 14:30:38.000.263,=C:\Users\Sabrina Billard\Desktop\parking_classe\Unit1.cpp</Transaction>
+    <Transaction>2019/03/07 14:30:57.000.068,C:\Users\Sabrina Billard\Desktop\parking_classe\Unit1.cpp=C:\Users\Sabrina Billard\Desktop\parking_classe\TCP_IP_Client.cpp</Transaction>
+    <Transaction>2019/03/07 14:30:57.000.068,C:\Users\Sabrina Billard\Desktop\parking_classe\Unit1.h=C:\Users\Sabrina Billard\Desktop\parking_classe\TCP_IP_Client.h</Transaction>
+    <Transaction>2019/03/07 15:27:59.000.789,C:\Users\Sabrina Billard\Desktop\parking_classe\supervision.h=C:\Users\Sabrina Billard\Desktop\parking_classe\ihm.h</Transaction>
+    <Transaction>2019/03/07 15:27:59.000.789,C:\Users\Sabrina Billard\Desktop\parking_classe\supervision.dfm=C:\Users\Sabrina Billard\Desktop\parking_classe\ihm.dfm</Transaction>
+    <Transaction>2019/03/07 15:27:59.000.789,C:\Users\Sabrina Billard\Desktop\parking_classe\supervision.cpp=C:\Users\Sabrina Billard\Desktop\parking_classe\ihm.cpp</Transaction>
+    <Transaction>2019/03/07 15:28:10.000.208,=C:\Users\Sabrina Billard\Desktop\parking_classe\Unit1.cpp</Transaction>
+    <Transaction>2019/03/07 15:28:18.000.106,C:\Users\Sabrina Billard\Desktop\parking_classe\Unit1.h=C:\Users\Sabrina Billard\Desktop\parking_classe\supervision.h</Transaction>
+    <Transaction>2019/03/07 15:28:18.000.106,C:\Users\Sabrina Billard\Desktop\parking_classe\Unit1.cpp=C:\Users\Sabrina Billard\Desktop\parking_classe\supervision.cpp</Transaction>
+    <Transaction>2019/03/12 14:48:39.000.838,=C:\Users\Sabrina Billard\Desktop\classe char\StringUtils.cpp</Transaction>
+    <Transaction>2019/03/21 10:37:42.533,=\\PARKING_PROJET\Parking_Projet\git\ihm supervision\Sabrina\StringUtils.cpp</Transaction>
+    <Transaction>2019/03/21 10:40:45.075,=\\PARKING_PROJET\Parking_Projet\git\classes olivier\DEMANDE_ACCESS.cpp</Transaction>
+    <Transaction>2019/03/21 10:41:00.537,=\\PARKING_PROJET\Parking_Projet\git\classes olivier\GESTION_ACCESS_.cpp</Transaction>
+    <Transaction>2019/03/21 10:41:09.053,=\\PARKING_PROJET\Parking_Projet\git\classes olivier\GESTION_VALIDATEUR.cpp</Transaction>
+    <Transaction>2019/03/21 10:41:20.722,=\\PARKING_PROJET\Parking_Projet\git\classes olivier\HORODATAGE.cpp</Transaction>
+    <Transaction>2019/03/21 10:41:29.760,=\\PARKING_PROJET\Parking_Projet\git\classes olivier\MYSQL.cpp</Transaction>
+    <Transaction>2019/03/21 10:44:18.211,=\\PARKING_PROJET\Parking_Projet\git\classes olivier\BDD.cpp</Transaction>
+    <Transaction>2019/03/21 11:57:57.955,\\PARKING_PROJET\Parking_Projet\git\classes olivier\GESTION_VALIDATEUR.cpp=</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="\\PARKING_PROJET\Parking_Projet\git"/>
+    <File Path="..\..\classes olivier"/>
+    <File Path="..\..\classes olivier\BDD.cpp"/>
+    <File Path="..\..\classes olivier\BDD.cpp"/>
+    <File Path="..\..\classes olivier\BDD.h"/>
+    <File Path="..\..\classes olivier\DEMANDE_ACCESS.cpp"/>
+    <File Path="..\..\classes olivier\DEMANDE_ACCESS.cpp"/>
+    <File Path="..\..\classes olivier\DEMANDE_ACCESS.h"/>
+    <File Path="..\..\classes olivier\GESTION_ACCESS_.cpp"/>
+    <File Path="..\..\classes olivier\GESTION_ACCESS_.cpp"/>
+    <File Path="..\..\classes olivier\GESTION_ACCESS_.h"/>
+    <File Path="..\..\classes olivier\HORODATAGE.cpp"/>
+    <File Path="..\..\classes olivier\HORODATAGE.cpp"/>
+    <File Path="..\..\classes olivier\HORODATAGE.h"/>
+    <File Path="..\..\classes olivier\MYSQL.cpp"/>
+    <File Path="..\..\classes olivier\MYSQL.cpp"/>
+    <File Path="..\..\classes olivier\MYSQL.h"/>
+    <File Path="Admin.cpp"/>
+    <File Path="Admin.cpp"/>
+    <File Path="Admin.h"/>
+    <File Path="ihm.cpp"/>
+    <File Path="ihm.cpp"/>
+    <File Path="ihm.dfm"/>
+    <File Path="ihm.h"/>
+    <File Path="pilotage.cpp"/>
+    <File Path="pilotage.cpp"/>
+    <File Path="pilotage.h"/>
+    <File Path="Project1.cpp"/>
+    <File Path="Project1PCH1.h"/>
+    <File Path="supervision.cpp"/>
+    <File Path="supervision.cpp"/>
+    <File Path="supervision.h"/>
+    <File Path="TCP_IP_Client.cpp"/>
+    <File Path="TCP_IP_Client.cpp"/>
+    <File Path="TCP_IP_Client.h"/>
+    <File Path="StringUtils.cpp"/>
+    <File Path="StringUtils.cpp"/>
+    <File Path="StringUtils.h"/>
+  </ProjectSortOrder>
+</BorlandProject>

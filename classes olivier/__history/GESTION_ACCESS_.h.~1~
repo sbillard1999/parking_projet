@@ -1,0 +1,28 @@
+//---------------------------------------------------------------------------
+
+#ifndef GESTION_ACCESS_H
+#define GESTION_ACCESS_H
+
+class GESTION_ACCESS
+{
+	private:
+		string nom;
+		string prenom;
+		string immatriculation;
+		int etat;
+		string expiration;
+		string validateur;
+		string message;
+		string date;
+
+	public:
+		GESTION_ACCESS();
+		//vector lire_demande();
+		void changer_etat();
+		bool envoi_message();
+		bool modifier_date_expiration();
+
+};
+
+//---------------------------------------------------------------------------
+#endif

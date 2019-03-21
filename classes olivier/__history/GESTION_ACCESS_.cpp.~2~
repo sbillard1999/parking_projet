@@ -1,0 +1,53 @@
+//---------------------------------------------------------------------------
+
+#pragma hdrstop
+
+#include <vector>
+#include <string>
+#include <iostream.h>
+#include <fstream.h>
+using namespace std;
+
+#include "GESTION_ACCESS_.h"
+
+GESTION_ACCESS::GESTION_ACCESS()
+{
+
+}
+
+vector< vector<string> >GESTION_ACCESS::lire_demande()
+{
+  vector< vector<string> > lecture;
+
+		  lecture[0][0].push_back("proprietaire");
+		  lecture[0][1].push_back("plaque");
+		  lecture[0][2].push_back("horodatage");
+  }
+
+  for(int i=1;i<10;i++)
+  {
+	for(int j=0;j<3;j++)
+	{
+		//lecture[i][j]
+	}
+
+  }
+}
+
+void GESTION_ACCESS::changer_etat()
+{
+
+}
+
+bool GESTION_ACCESS::envoi_message()
+{
+    return true;
+}
+
+bool GESTION_ACCESS::modifier_date_expiration()
+{
+    return true;
+}
+
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
