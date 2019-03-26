@@ -87,7 +87,7 @@ object demarrage: Tdemarrage
   object msgco: TLabel
     Left = 373
     Top = 375
-    Width = 497
+    Width = 99
     Height = 31
     Caption = 'message'
     Font.Charset = ANSI_CHARSET

@@ -18,7 +18,7 @@ class supervision
 	void export_(string,string,string);
 	void enregistrement_parametre(UnicodeString);
 	UnicodeString getmode();
-	bool compare_plaque(vector<UnicodeString>,UnicodeString plaquelu);
+	bool compare_plaque(vector<string>,string plaquelu);
 
 
 	supervision();

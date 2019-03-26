@@ -7,17 +7,20 @@
 
 #ifndef Lecture_plaqueH
 #define Lecture_plaqueH
+#include <string>
+using namespace std;
+#include <vcl.h>
 //---------------------------------------------------------------------------
 #endif
 class Lecture_plaque{
 
 	private:
-		Camera * acquisition;
+		//Camera * acquisition;
 
 
 	public:
 		Lecture_plaque();
-		char Lire_acquisition(Camera * acquisition);
+		string Lire_acquisition();
 
 
-}
+};

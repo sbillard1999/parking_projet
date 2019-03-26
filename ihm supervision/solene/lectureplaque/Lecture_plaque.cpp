@@ -18,12 +18,13 @@ Lecture_plaque::Lecture_plaque()
 }
 //------------------------------------------------------------------------------
 
-char Lecture_plaque::Lire_acquisition(Camera * acquisition)
+string Lecture_plaque::Lire_acquisition()
 {
-	char * acquis;
-	acquis = acquisition;
+	string acquis;
+	acquis="df-55-fd";
+	//acquis = acquisition;
 
-    return "acquisition réussie: %s",acquis;
+	return acquis;
 
 }
 //------------------------------------------------------------------------------

@@ -21,6 +21,10 @@
 #include "Admin.h"
 #include "pilotage.h"
 #include "TCP_IP_Client.h"
+#include "Lecture_plaque.h"
+#include <iostream>
+#include <ctime>
+#include "HORODATAGE.h"
 //---------------------------------------------------------------------------
 using namespace std;
 class Tdemarrage : public TForm
@@ -76,6 +80,8 @@ public:		// Déclarations utilisateur
 	supervision sup;
 	pilotage decision;
 	TCP_IP_Client* tcp;
+	Lecture_plaque lecture;
+	HORODATAGE access;
 
 
 

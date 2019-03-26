@@ -51,21 +51,14 @@ void __fastcall Tdemarrage::Afficherlesaccs1Click(TObject *Sender)
 	buttonrecherche->Visible=true;
 	editrecherche->Visible=true;
 	titre->Caption="Affichage des accès";
-    	bddproprietaire.clear();
-		bddplaque.clear();
-		bddhorodatage.clear();
 
-
-
-	for(int i=0;i<3;i++)
-	{
-		bddplaque.push_back("ewf-dd44-fd");
-		bddproprietaire.push_back("sabrina");
-		bddhorodatage.push_back("19/04/2019");
-		bddplaque.push_back("ewdfdff-ffddd44-fd");
-		bddproprietaire.push_back("sabrinda");
-		bddhorodatage.push_back("19/04/2019");
-	}
+	bddplaque.clear();
+	bddhorodatage.clear();
+	bddproprietaire.clear();
+	//lecture access
+	bddplaque=access.getimmatriculation();
+	bddproprietaire=access.getproprietaire();
+    bddhorodatage=access.gethorodatage();
 
 
 	for(int i=0;i<bddproprietaire.size();i++)
@@ -243,29 +236,38 @@ void __fastcall Tdemarrage::demarrageprogClick(TObject *Sender)
 {
 	UnicodeString mode=sup.getmode();
 	demarrageprog->Visible=true;
+	string proprietaire;
+	vector<string>plaquebase;
+	string plaquelu=lecture.Lire_acquisition();
+	access.lecture_access();
+	plaquebase=access.getimmatriculation();
+	UnicodeString etat;
+
+	int correspondance=0;
+
 
 	if(client->Connected()==true)
 	{
 		if(mode=="automatique")
 		{
+			// date / heure actuelle basée sur le système actuel
+			time_t tmm = time(0);
+			string horodatage = ctime(&tmm);
 
-			vector<UnicodeString>plaquebase;
 
-			plaquebase.push_back("ds-478-dsf");
-			plaquebase.push_back("fd-fdf-455");
-			plaquebase.push_back("df-55-fd");
-			UnicodeString plaquelu="df-55-fd";
-			if(sup.compare_plaque(plaquebase,plaquelu)==true)
-			{
-				decision.ouverture();
-			}
-			else
-			{
-				decision.fermeture();
-			}
-			UnicodeString etat=decision.getetat();
-			tcp->Ecriture(client,etat);
-			//enregistrer
+				if(sup.compare_plaque(plaquebase,plaquelu)==true)
+				{
+					decision.ouverture();
+					proprietaire=access.lecture_access_proprietaire(plaquelu);
+				}
+				else
+				{
+					decision.fermeture();
+				}
+				etat=decision.getetat();
+				tcp->Ecriture(client,etat);
+				access.ecriture();
+
 
 		}
 		else if(mode=="overopen")
@@ -273,7 +275,24 @@ void __fastcall Tdemarrage::demarrageprogClick(TObject *Sender)
 			decision.ouverture();
 			UnicodeString etat="ouverture";
 			tcp->Ecriture(client,etat);
-			//ecriture bdd
+			string plaquelu=lecture.Lire_acquisition();
+
+			time_t tmm = time(0);
+			// convertir en forme de chaîne
+			string horodatage = ctime(&tmm);
+
+				if(sup.compare_plaque(plaquebase,plaquelu)==true)
+				{
+					decision.ouverture();
+					proprietaire=access.lecture_access_proprietaire(plaquelu);
+				}
+
+				else
+				{
+				   proprietaire="inconnu";
+				}
+
+			access.ecriture();
 
 		}
 	}
@@ -283,20 +302,31 @@ void __fastcall Tdemarrage::demarrageprogClick(TObject *Sender)
 
 void __fastcall Tdemarrage::ouvrirClick(TObject *Sender)
 {
+	string plaquelu=lecture.Lire_acquisition();
+	string proprietaire;
+	time_t tmm = time(0);
+	// convertir en forme de chaîne
+	string horodatage = ctime(&tmm);
 	decision.ouverture();
 	UnicodeString etat="ouverture";
 	tcp->Ecriture(client,etat);
+	proprietaire="non vérifié";
 
-	//bdd
+	access.ecriture();
 }
 //---------------------------------------------------------------------------
 
 void __fastcall Tdemarrage::fermerClick(TObject *Sender)
 {
+    string plaquelu=lecture.Lire_acquisition();
+	string proprietaire;
+	time_t tmm = time(0);
+	// convertir en forme de chaîne
+	string horodatage = ctime(&tmm);
 	decision.fermeture();
 	UnicodeString etat="Fermeture";
 	tcp->Ecriture(client,etat);
-	//bdd
+	access.ecriture();
 }
 //---------------------------------------------------------------------------
 
@@ -330,14 +360,11 @@ void __fastcall Tdemarrage::buttonrechercheClick(TObject *Sender)
 		bddplaque.clear();
 		bddhorodatage.clear();
 
+	access.lecture_access_vehicule(editrecherche->Text);
 
-	//bdd requette select
-	for(int i=0;i<6;i++)
-	{
-	  bddproprietaire.push_back("sabrina");
-	  bddplaque.push_back("ed-qq85-ds");
-	  bddhorodatage.push_back("date");
-	}
+	bddproprietaire=access.getproprietaire();
+	bddplaque=access.getimmatriculation();
+    bddhorodatage=access.gethorodatage();
 	for(int i=0;i<bddplaque.size();i++)
 	{
 
@@ -350,4 +377,5 @@ void __fastcall Tdemarrage::buttonrechercheClick(TObject *Sender)
 
 }
 //---------------------------------------------------------------------------
+
 

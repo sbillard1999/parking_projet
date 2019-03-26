@@ -39,19 +39,13 @@
         <CfgParent>Base</CfgParent>
         <Base>true</Base>
     </PropertyGroup>
-    <PropertyGroup Condition="('$(Platform)'=='Win64' and '$(Cfg_2)'=='true') or '$(Cfg_2_Win64)'!=''">
-        <Cfg_2_Win64>true</Cfg_2_Win64>
-        <CfgParent>Cfg_2</CfgParent>
-        <Cfg_2>true</Cfg_2>
-        <Base>true</Base>
-    </PropertyGroup>
     <PropertyGroup Condition="'$(Base)'!=''">
-        <ILINK_LibraryPath>..\..\classes olivier\;..\classe char\;..\..\..\..\Desktop\parking_classe\;$(ILINK_LibraryPath)</ILINK_LibraryPath>
+        <ILINK_LibraryPath>..\solene\lectureplaque\;..\..\classes olivier\;..\classe char\;..\..\..\..\Desktop\parking_classe\;$(ILINK_LibraryPath)</ILINK_LibraryPath>
         <Icon_MainIcon>$(BDS)\bin\cbuilder_PROJECTICON.ico</Icon_MainIcon>
         <Multithreaded>true</Multithreaded>
         <AllPackageLibs>rtl.lib;vcl.lib;IndySystem.lib;IndyCore.lib</AllPackageLibs>
         <SanitizedProjectName>Project1</SanitizedProjectName>
-        <IncludePath>..\..\classes olivier\;..\classe char\;..\..\..\..\Desktop\parking_classe\;$(IncludePath)</IncludePath>
+        <IncludePath>..\solene\lectureplaque\;..\..\classes olivier\;..\classe char\;..\..\..\..\Desktop\parking_classe\;$(IncludePath)</IncludePath>
         <DCC_Namespace>System;Xml;Data;Datasnap;Web;Soap;Vcl;Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell;$(DCC_Namespace)</DCC_Namespace>
         <_TCHARMapping>char</_TCHARMapping>
         <ProjectType>CppVCLApplication</ProjectType>
@@ -108,9 +102,6 @@
         <Defines>NDEBUG;$(Defines)</Defines>
         <TASM_Debugging>None</TASM_Debugging>
     </PropertyGroup>
-    <PropertyGroup Condition="'$(Cfg_2_Win64)'!=''">
-        <BCC_PCHName_Clang>Project1PCH1.h</BCC_PCHName_Clang>
-    </PropertyGroup>
     <ItemGroup>
         <CppCompile Include="..\..\classes olivier\BDD.cpp">
             <DependentOn>..\..\classes olivier\BDD.h</DependentOn>
@@ -163,6 +154,10 @@
         <CppCompile Include="TCP_IP_Client.cpp">
             <DependentOn>TCP_IP_Client.h</DependentOn>
             <BuildOrder>5</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="..\solene\lectureplaque\Lecture_plaque.cpp">
+            <DependentOn>..\solene\lectureplaque\Lecture_plaque.h</DependentOn>
+            <BuildOrder>13</BuildOrder>
         </CppCompile>
         <FormResources Include="ihm.dfm"/>
         <BuildConfiguration Include="Release">
@@ -621,13 +616,13 @@
                         <Operation>1</Operation>
                     </Platform>
                 </DeployClass>
-                <ProjectRoot Platform="iOSSimulator" Name="$(PROJECTNAME).app"/>
+                <ProjectRoot Platform="iOSDevice32" Name="$(PROJECTNAME).app"/>
                 <ProjectRoot Platform="Android" Name="$(PROJECTNAME)"/>
                 <ProjectRoot Platform="Win32" Name="$(PROJECTNAME)"/>
                 <ProjectRoot Platform="iOSDevice64" Name="$(PROJECTNAME).app"/>
                 <ProjectRoot Platform="OSX32" Name="$(PROJECTNAME).app"/>
+                <ProjectRoot Platform="iOSSimulator" Name="$(PROJECTNAME).app"/>
                 <ProjectRoot Platform="Win64" Name="$(PROJECTNAME)"/>
-                <ProjectRoot Platform="iOSDevice32" Name="$(PROJECTNAME).app"/>
             </Deployment>
             <Platforms>
                 <Platform value="Win32">True</Platform>
