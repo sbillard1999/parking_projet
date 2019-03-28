@@ -179,7 +179,6 @@ object demarrage: Tdemarrage
     ItemHeight = 40
     Items.Strings = (
       'Automatique'
-      'Manuel'
       'overopen')
     ParentFont = False
     TabOrder = 5

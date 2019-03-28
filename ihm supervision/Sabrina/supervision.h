@@ -24,6 +24,7 @@ class supervision
 	supervision();
 	~supervision();
 	StringUtils *conversion;
+	StringUtils *conversion2;
 
 
 };

@@ -56,9 +56,11 @@ void __fastcall Tdemarrage::Afficherlesaccs1Click(TObject *Sender)
 	bddhorodatage.clear();
 	bddproprietaire.clear();
 	//lecture access
+	access.lecture_access();
+	bddhorodatage=access.gethorodatage();
 	bddplaque=access.getimmatriculation();
 	bddproprietaire=access.getproprietaire();
-    bddhorodatage=access.gethorodatage();
+
 
 
 	for(int i=0;i<bddproprietaire.size();i++)
@@ -82,6 +84,7 @@ void __fastcall Tdemarrage::export_Click(TObject *Sender)
 	message->Visible=true;
 	connexiontcp->Visible=false;
 
+	//Vider le fichier
 	ofstream fichier("export.txt", ios::out | ios::trunc);  //déclaration du flux et ouverture du fichier
 
 		if(fichier)  // si l'ouverture a réussi
@@ -127,11 +130,11 @@ void __fastcall Tdemarrage::buttonmodeClick(TObject *Sender)
 	connexiontcp->Visible=false;
 
    int selection=0;
-	for(int i=0;i<3;i++)
+	for(int i=0;i<2;i++)
    {
 	   if(listmode->Selected[i])
 	   {
-
+		mode="";
 		mode=listmode->Items->Strings[i];
 		selection++;
 	   }
@@ -238,18 +241,24 @@ void __fastcall Tdemarrage::demarrageprogClick(TObject *Sender)
 	demarrageprog->Visible=true;
 	string proprietaire;
 	vector<string>plaquebase;
-	string plaquelu=lecture.Lire_acquisition();
-	access.lecture_access();
-	plaquebase=access.getimmatriculation();
+	string plaquelu;
 	UnicodeString etat;
+
 
 	int correspondance=0;
 
 
 	if(client->Connected()==true)
 	{
-		if(mode=="automatique")
+
+		if(mode=="Automatique")
 		{
+			plaquebase.clear();
+			plaquelu=lecture.Lire_acquisition();
+			access.lecture_access();
+			plaquebase=access.getimmatriculation();
+
+
 			// date / heure actuelle basée sur le système actuel
 			time_t tmm = time(0);
 			string horodatage = ctime(&tmm);
@@ -263,6 +272,7 @@ void __fastcall Tdemarrage::demarrageprogClick(TObject *Sender)
 				else
 				{
 					decision.fermeture();
+					proprietaire="inconnu";
 				}
 				etat=decision.getetat();
 				tcp->Ecriture(client,etat);
@@ -272,10 +282,14 @@ void __fastcall Tdemarrage::demarrageprogClick(TObject *Sender)
 		}
 		else if(mode=="overopen")
 		{
+			plaquebase.clear();
 			decision.ouverture();
 			UnicodeString etat="ouverture";
 			tcp->Ecriture(client,etat);
 			string plaquelu=lecture.Lire_acquisition();
+			access.lecture_access();
+			plaquebase=access.getimmatriculation();
+
 
 			time_t tmm = time(0);
 			// convertir en forme de chaîne
@@ -283,7 +297,6 @@ void __fastcall Tdemarrage::demarrageprogClick(TObject *Sender)
 
 				if(sup.compare_plaque(plaquebase,plaquelu)==true)
 				{
-					decision.ouverture();
 					proprietaire=access.lecture_access_proprietaire(plaquelu);
 				}
 
