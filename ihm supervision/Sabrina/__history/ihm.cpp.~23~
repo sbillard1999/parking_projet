@@ -350,20 +350,23 @@ void __fastcall Tdemarrage::buttonrechercheClick(TObject *Sender)
 	plaque->Clear();
 	horodatage->Clear();
 
-	bddproprietaire.clear();
-	bddplaque.clear();
-	bddhorodatage.clear();
+		bddproprietaire.clear();
+		bddplaque.clear();
+		bddhorodatage.clear();
 
 	access.lecture_access_vehicule(editrecherche->Text);
 
-	bddproprietaire = access.getproprietaire();
-	bddplaque = access.getimmatriculation();
-	bddhorodatage = access.gethorodatage();
-	for (int i = 0; i < bddplaque.size(); i++) {
+	bddproprietaire=access.getproprietaire();
+	bddplaque=access.getimmatriculation();
+    bddhorodatage=access.gethorodatage();
+	for(int i=0;i<bddplaque.size();i++)
+	{
 
-		proprietaire->Lines->Add(bddproprietaire[i].c_str());
-		plaque->Lines->Add(bddplaque[i].c_str());
-		horodatage->Lines->Add(bddhorodatage[i].c_str());
+			proprietaire->Lines->Add(bddproprietaire[i].c_str());
+			plaque->Lines->Add(bddplaque[i].c_str());
+			horodatage->Lines->Add(bddhorodatage[i].c_str());
+
+
 	}
 
 }

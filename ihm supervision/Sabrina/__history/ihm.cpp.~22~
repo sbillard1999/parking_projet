@@ -290,15 +290,15 @@ void __fastcall Tdemarrage::demarrageprogClick(TObject *Sender)
 
 void __fastcall Tdemarrage::ouvrirClick(TObject *Sender)
 {
-	string plaquelu = lecture.Lire_acquisition();
+	string plaquelu=lecture.Lire_acquisition();
 	string proprietaire;
 	time_t tmm = time(0);
 	// convertir en forme de chaîne
 	string horodatage = ctime(&tmm);
 	decision.ouverture();
-	UnicodeString etat = "ouverture";
-	tcp->Ecriture(client, etat);
-	proprietaire = "non vérifié";
+	UnicodeString etat="ouverture";
+	tcp->Ecriture(client,etat);
+	proprietaire="non vérifié";
 
 	access.ecriture();
 }
@@ -320,26 +320,20 @@ void __fastcall Tdemarrage::fermerClick(TObject *Sender)
 
 void __fastcall Tdemarrage::Manuel1Click(TObject *Sender)
 {
-	labelmode->Visible = false;
-	listmode->Visible = false;
-	buttonmode->Visible = false;
-	titre->Visible = false;
-	this->horodatage->Clear();
-	this->proprietaire->Clear();
-	this->plaque->Clear();
-	horodatage->Visible = false;
-	proprietaire->Visible = false;
-	plaque->Visible = false;
-	this->titre->Visible = false;
-	this->export_->Visible = false;
-	labelsauvegardemode->Visible = false;
-	connexiontcp->Visible = true;
-	demarrageprog->Visible = false;
-	ouvrir->Visible = true;
-	fermer->Visible = true;
-	Recherche->Visible = false;
-	buttonrecherche->Visible = false;
-	editrecherche->Visible = false;
+	labelmode->Visible=false;listmode->Visible=false;buttonmode->Visible=false;
+   titre->Visible=false;
+	this->horodatage->Clear();this->proprietaire->Clear();this->plaque->Clear();
+	horodatage->Visible=false;proprietaire->Visible=false;plaque->Visible=false;
+	this->titre->Visible=false;this->export_->Visible=false;
+	labelsauvegardemode->Visible=false;
+	connexiontcp->Visible=true;
+	demarrageprog->Visible=false;
+	ouvrir->Visible=true;
+	fermer->Visible=true;
+	Recherche->Visible=false;
+	buttonrecherche->Visible=false;
+	editrecherche->Visible=false;
+
 }
 //---------------------------------------------------------------------------
 //---------------------------------------------------------------------------
@@ -350,20 +344,23 @@ void __fastcall Tdemarrage::buttonrechercheClick(TObject *Sender)
 	plaque->Clear();
 	horodatage->Clear();
 
-	bddproprietaire.clear();
-	bddplaque.clear();
-	bddhorodatage.clear();
+		bddproprietaire.clear();
+		bddplaque.clear();
+		bddhorodatage.clear();
 
 	access.lecture_access_vehicule(editrecherche->Text);
 
-	bddproprietaire = access.getproprietaire();
-	bddplaque = access.getimmatriculation();
-	bddhorodatage = access.gethorodatage();
-	for (int i = 0; i < bddplaque.size(); i++) {
+	bddproprietaire=access.getproprietaire();
+	bddplaque=access.getimmatriculation();
+    bddhorodatage=access.gethorodatage();
+	for(int i=0;i<bddplaque.size();i++)
+	{
 
-		proprietaire->Lines->Add(bddproprietaire[i].c_str());
-		plaque->Lines->Add(bddplaque[i].c_str());
-		horodatage->Lines->Add(bddhorodatage[i].c_str());
+			proprietaire->Lines->Add(bddproprietaire[i].c_str());
+			plaque->Lines->Add(bddplaque[i].c_str());
+			horodatage->Lines->Add(bddhorodatage[i].c_str());
+
+
 	}
 
 }
