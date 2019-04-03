@@ -346,4 +346,14 @@ object demarrage: Tdemarrage
     Left = 776
     Top = 64
   end
+  object serveur: TIdTCPServer
+    Bindings = <
+      item
+        IP = '0.0.0.0'
+        Port = 9012
+      end>
+    DefaultPort = 0
+    Left = 824
+    Top = 144
+  end
 end

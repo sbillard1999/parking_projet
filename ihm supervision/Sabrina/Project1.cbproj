@@ -143,6 +143,10 @@
             <DependentOn>TCP_IP_Client.h</DependentOn>
             <BuildOrder>5</BuildOrder>
         </CppCompile>
+        <CppCompile Include="TCP_IP_Serveur.cpp">
+            <DependentOn>TCP_IP_Serveur.h</DependentOn>
+            <BuildOrder>11</BuildOrder>
+        </CppCompile>
         <CppCompile Include="..\solene\lectureplaque\Lecture_plaque.cpp">
             <DependentOn>..\solene\lectureplaque\Lecture_plaque.h</DependentOn>
             <BuildOrder>13</BuildOrder>

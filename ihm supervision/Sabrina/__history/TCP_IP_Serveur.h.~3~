@@ -1,0 +1,13 @@
+//---------------------------------------------------------------------------
+
+#ifndef TCP_IP_ServeurH
+#define TCP_IP_ServeurH
+//---------------------------------------------------------------------------
+class TCP_IP_Serveur
+{
+	public:
+	TCP_IP_Serveur();
+	bool Lecture(TIdTCPClient*,UnicodeString);
+	bool connexion(TIdTCPClient*);
+}
+#endif

@@ -62,7 +62,7 @@ void __fastcall Tdemarrage::Afficherlesaccs1Click(TObject *Sender)
 	Recherche->Visible = true;
 	buttonrecherche->Visible = true;
 	editrecherche->Visible = true;
-	titre->Caption = "Affichage des accès";
+	titre->Caption = "Affichage des accès non autorisé";
 
 	bddplaque.clear();
 	bddhorodatage.clear();
@@ -233,6 +233,7 @@ void __fastcall Tdemarrage::demarrageprogClick(TObject *Sender)
 	vector<string> plaquebase;
 	string plaquelu;
 	UnicodeString etat;
+	UnicodeString autorisation;
 
 	int correspondance = 0;
 
@@ -251,10 +252,12 @@ void __fastcall Tdemarrage::demarrageprogClick(TObject *Sender)
 			if (sup.compare_plaque(plaquebase, plaquelu) == true) {
 				decision.ouverture();
 				proprietaire = access.lecture_access_proprietaire(plaquelu);
+				autorisation="autorisé";
 			}
 			else {
 				decision.fermeture();
 				proprietaire = "inconnu";
+				autorisation="non autorisé";
 			}
 			etat = decision.getetat();
 			tcp->Ecriture(client, etat);
@@ -355,5 +358,6 @@ void __fastcall Tdemarrage::buttonrechercheClick(TObject *Sender)
 
 }
 //---------------------------------------------------------------------------
+
 
 

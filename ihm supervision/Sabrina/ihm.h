@@ -14,6 +14,8 @@
 #include <IdComponent.hpp>
 #include <IdTCPClient.hpp>
 #include <IdTCPConnection.hpp>
+#include <IdCustomTCPServer.hpp>
+#include <IdTCPServer.hpp>
 #include <vector>
 #include <string>
 #include <fstream>
@@ -58,6 +60,7 @@ __published:	// Composants gérés par l'EDI
 	TLabel *Recherche;
 	TEdit *editrecherche;
 	TButton *buttonrecherche;
+	TIdTCPServer *serveur;
 	void __fastcall Afficherlesaccs1Click(TObject *Sender);
 	void __fastcall export_Click(TObject *Sender);
 	void __fastcall Parametre1Click(TObject *Sender);

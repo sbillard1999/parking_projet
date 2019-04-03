@@ -1,0 +1,31 @@
+//---------------------------------------------------------------------------
+
+#pragma hdrstop
+
+#include "TCP_IP_Serveur.h"
+//---------------------------------------------------------------------------
+TCP_IP_Serveur::TCP_IP_Serveur()
+{
+
+}
+
+bool TCP_IP_Serveur::connexion(TIdTCPClient *client)
+{
+
+   client->Connect();
+   if(client->Connected()==true)
+   {
+	   return true;
+   }
+   else
+   {
+	   return false;
+   }
+
+}
+
+bool TCP_IP_Serveur::Lecture(TIdTCPClient *client,UnicodeString etat)
+{
+  client->Socket->WriteLn(etat);
+}
+#pragma package(smart_init)
