@@ -17,7 +17,6 @@ class TCP_IP_Client
 
 	public:
 	TCP_IP_Client();
-	pilotage decision;
 	bool Ecriture(TIdTCPClient*,UnicodeString);
 	bool connexion(TIdTCPClient*);
 

@@ -73,6 +73,7 @@ void __fastcall Tdemarrage::Afficherlesaccs1Click(TObject *Sender)
 	bddplaque = access.getimmatriculation();
 	bddproprietaire = access.getproprietaire();
 
+	//Affichage des données dans des memos
 	for(int i = 0; i < bddproprietaire.size(); i++) {
 		this->proprietaire->Lines->Add(bddproprietaire[i].c_str());
 		this->plaque->Lines->Add(bddplaque[i].c_str());
@@ -290,31 +291,17 @@ void __fastcall Tdemarrage::demarrageprogClick(TObject *Sender)
 
 void __fastcall Tdemarrage::ouvrirClick(TObject *Sender)
 {
-	string plaquelu = lecture.Lire_acquisition();
-	string proprietaire;
-	time_t tmm = time(0);
-	// convertir en forme de chaîne
-	string horodatage = ctime(&tmm);
 	decision.ouverture();
 	UnicodeString etat = "ouverture";
 	tcp->Ecriture(client, etat);
-	proprietaire = "non vérifié";
-
-	access.ecriture();
 }
 //---------------------------------------------------------------------------
 
 void __fastcall Tdemarrage::fermerClick(TObject *Sender)
 {
-    string plaquelu=lecture.Lire_acquisition();
-	string proprietaire;
-	time_t tmm = time(0);
-	// convertir en forme de chaîne
-	string horodatage = ctime(&tmm);
 	decision.fermeture();
 	UnicodeString etat="Fermeture";
 	tcp->Ecriture(client,etat);
-	access.ecriture();
 }
 //---------------------------------------------------------------------------
 
