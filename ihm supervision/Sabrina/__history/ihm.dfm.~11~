@@ -3,7 +3,7 @@ object demarrage: Tdemarrage
   Top = 0
   Caption = 'demarrage'
   ClientHeight = 421
-  ClientWidth = 900
+  ClientWidth = 880
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -87,7 +87,7 @@ object demarrage: Tdemarrage
   object msgco: TLabel
     Left = 373
     Top = 375
-    Width = 497
+    Width = 99
     Height = 31
     Caption = 'message'
     Font.Charset = ANSI_CHARSET
@@ -179,7 +179,6 @@ object demarrage: Tdemarrage
     ItemHeight = 40
     Items.Strings = (
       'Automatique'
-      'Manuel'
       'overopen')
     ParentFont = False
     TabOrder = 5
@@ -346,5 +345,16 @@ object demarrage: Tdemarrage
     ReadTimeout = -1
     Left = 776
     Top = 64
+  end
+  object serveur: TIdTCPServer
+    Bindings = <
+      item
+        IP = '0.0.0.0'
+        Port = 9012
+      end>
+    DefaultPort = 0
+    OnExecute = serveurExecute
+    Left = 824
+    Top = 144
   end
 end
