@@ -3,7 +3,7 @@ object demarrage: Tdemarrage
   Top = 0
   Caption = 'demarrage'
   ClientHeight = 421
-  ClientWidth = 900
+  ClientWidth = 880
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -353,6 +353,7 @@ object demarrage: Tdemarrage
         Port = 9012
       end>
     DefaultPort = 0
+    OnExecute = serveurExecute
     Left = 824
     Top = 144
   end

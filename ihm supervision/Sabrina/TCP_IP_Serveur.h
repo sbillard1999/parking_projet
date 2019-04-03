@@ -2,11 +2,21 @@
 
 #ifndef TCP_IP_ServeurH
 #define TCP_IP_ServeurH
+#include <string>
+#include <vcl.h>
+#include <IdBaseComponent.hpp>
+#include <IdComponent.hpp>
+#include <IdTCPServer.hpp>
+#include <IdTCPConnection.hpp>
+#include <IdContext.hpp>
+using namespace std;
 //---------------------------------------------------------------------------
 class TCP_IP_Serveur
 {
 	public:
 	TCP_IP_Serveur();
 	void activation(TIdTCPServer*);
+	void desactivation(TIdTCPServer*);
+	UnicodeString lecture(TIdContext *AContext);
 };
 #endif

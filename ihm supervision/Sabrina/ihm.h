@@ -16,6 +16,7 @@
 #include <IdTCPConnection.hpp>
 #include <IdCustomTCPServer.hpp>
 #include <IdTCPServer.hpp>
+#include <IdContext.hpp>
 #include <vector>
 #include <string>
 #include <fstream>
@@ -27,6 +28,7 @@
 #include <iostream>
 #include <ctime>
 #include "HORODATAGE.h"
+#include "TCP_IP_Serveur.h"
 //---------------------------------------------------------------------------
 using namespace std;
 class Tdemarrage : public TForm
@@ -73,16 +75,19 @@ __published:	// Composants gérés par l'EDI
 	void __fastcall fermerClick(TObject *Sender);
 	void __fastcall Manuel1Click(TObject *Sender);
 	void __fastcall buttonrechercheClick(TObject *Sender);
+	void __fastcall serveurExecute(TIdContext *AContext);
 private:	// Déclarations utilisateur
 
 public:		// Déclarations utilisateur
 	vector<string>bddplaque;
 	vector<string> bddproprietaire;
 	vector <string> bddhorodatage;
+	UnicodeString msg;
 
 	supervision sup;
 	pilotage decision;
 	TCP_IP_Client* tcp;
+	TCP_IP_Serveur* serv;
 	Lecture_plaque lecture;
 	HORODATAGE access;
 

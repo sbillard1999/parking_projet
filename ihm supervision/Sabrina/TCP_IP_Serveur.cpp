@@ -8,5 +8,20 @@ TCP_IP_Serveur::TCP_IP_Serveur()
 {
 
 }
+void TCP_IP_Serveur::activation(TIdTCPServer* serveur)
+{
+	serveur->Active=true;
+}
+void TCP_IP_Serveur::desactivation(TIdTCPServer* serveur)
+{
+	serveur->Active=false;
 
+
+}
+UnicodeString TCP_IP_Serveur::lecture(TIdContext *AContext)
+{
+	return AContext->Connection->Socket->ReadLn();
+}
+
+//string TCP_IP_Serveur::
 #pragma package(smart_init)

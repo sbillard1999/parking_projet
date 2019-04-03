@@ -241,7 +241,11 @@ void __fastcall Tdemarrage::demarrageprogClick(TObject *Sender)
 
 		if (mode == "Automatique") {
 			plaquebase.clear();
-			plaquelu = lecture.Lire_acquisition();
+			//plaquelu = lecture.Lire_acquisition();
+
+			tcp->Ecriture(client,"lire_plaque\r\n");
+			//serv->activation(serveur);
+
 			access.lecture_access();
 			plaquebase = access.getimmatriculation();
 
@@ -268,7 +272,10 @@ void __fastcall Tdemarrage::demarrageprogClick(TObject *Sender)
 			decision.ouverture();
 			UnicodeString etat = "ouverture";
 			tcp->Ecriture(client, etat);
-			string plaquelu = lecture.Lire_acquisition();
+			//string plaquelu = lecture.Lire_acquisition();
+			tcp->Ecriture(client,"lire_plaque\r\n");
+			serv->activation(serveur);
+
 			access.lecture_access();
 			plaquebase = access.getimmatriculation();
 
@@ -359,5 +366,15 @@ void __fastcall Tdemarrage::buttonrechercheClick(TObject *Sender)
 }
 //---------------------------------------------------------------------------
 
+
+
+
+
+void __fastcall Tdemarrage::serveurExecute(TIdContext *AContext)
+{
+	 msg="";
+	 msg=serv->lecture(AContext);
+}
+//---------------------------------------------------------------------------
 
 

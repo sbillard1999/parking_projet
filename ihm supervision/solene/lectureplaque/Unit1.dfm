@@ -13,4 +13,48 @@ object Form1: TForm1
   OldCreateOrder = False
   PixelsPerInch = 96
   TextHeight = 13
+  object Label1: TLabel
+    Left = 104
+    Top = 64
+    Width = 76
+    Height = 13
+    Caption = 'MESSAGE RECU'
+  end
+  object Button1: TButton
+    Left = 312
+    Top = 40
+    Width = 75
+    Height = 25
+    Caption = 'activer'
+    TabOrder = 0
+    OnClick = Button1Click
+  end
+  object Memo1: TMemo
+    Left = 264
+    Top = 120
+    Width = 185
+    Height = 89
+    Lines.Strings = (
+      'Memo1')
+    TabOrder = 1
+  end
+  object Button2: TButton
+    Left = 336
+    Top = 71
+    Width = 75
+    Height = 25
+    Caption = 'Button2'
+    TabOrder = 2
+  end
+  object serveur: TIdTCPServer
+    Bindings = <
+      item
+        IP = '0.0.0.0'
+        Port = 9012
+      end>
+    DefaultPort = 0
+    OnExecute = serveurExecute
+    Left = 504
+    Top = 104
+  end
 end
