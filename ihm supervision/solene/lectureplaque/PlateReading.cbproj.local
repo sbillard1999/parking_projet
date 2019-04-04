@@ -4,21 +4,21 @@
     <Transaction>2019/03/08 16:03:45.000.136,=C:\Users\SPiat\Documents\Embarcadero\Studio\Projets\Unit1.cpp</Transaction>
     <Transaction>2019/03/08 16:03:45.000.123,=C:\Users\SPiat\Documents\Embarcadero\Studio\Projets\Project2PCH1.h</Transaction>
     <Transaction>2019/03/08 16:03:53.000.055,=C:\Users\SPiat\Documents\Embarcadero\Studio\Projets\Unit2.cpp</Transaction>
-    <Transaction>2019/03/08 16:04:15.000.975,C:\Users\SPiat\Documents\Embarcadero\Studio\Projets\Unit2.h=C:\Users\SPiat\Documents\Embarcadero\Studio\Projets\Lecture_plaque.h</Transaction>
-    <Transaction>2019/03/08 16:04:15.000.975,C:\Users\SPiat\Documents\Embarcadero\Studio\Projets\Unit2.cpp=C:\Users\SPiat\Documents\Embarcadero\Studio\Projets\Lecture_plaque.cpp</Transaction>
-    <Transaction>2019/03/08 16:25:52.000.987,C:\Users\SPiat\Documents\Embarcadero\Studio\Projets\Unit1.dfm=C:\Users\SPiat\Desktop\Projet Parking\C++\lectureplaque\Unit1.dfm</Transaction>
-    <Transaction>2019/03/08 16:25:52.000.659,C:\Users\SPiat\Documents\Embarcadero\Studio\Projets\Lecture_plaque.h=C:\Users\SPiat\Desktop\Projet Parking\C++\lectureplaque\Lecture_plaque.h</Transaction>
-    <Transaction>2019/03/08 16:25:52.000.987,C:\Users\SPiat\Documents\Embarcadero\Studio\Projets\Unit1.h=C:\Users\SPiat\Desktop\Projet Parking\C++\lectureplaque\Unit1.h</Transaction>
-    <Transaction>2019/03/08 16:25:52.000.659,C:\Users\SPiat\Documents\Embarcadero\Studio\Projets\Lecture_plaque.cpp=C:\Users\SPiat\Desktop\Projet Parking\C++\lectureplaque\Lecture_plaque.cpp</Transaction>
-    <Transaction>2019/03/08 16:25:52.000.987,C:\Users\SPiat\Documents\Embarcadero\Studio\Projets\Unit1.cpp=C:\Users\SPiat\Desktop\Projet Parking\C++\lectureplaque\Unit1.cpp</Transaction>
-    <Transaction>2019/03/08 16:25:53.000.563,C:\Users\SPiat\Documents\Embarcadero\Studio\Projets\Project2PCH1.h=C:\Users\SPiat\Desktop\Projet Parking\C++\lectureplaque\Project2PCH1.h</Transaction>
-    <Transaction>2019/03/08 16:25:54.000.315,C:\Users\SPiat\Documents\Embarcadero\Studio\Projets\Project2.cbproj=C:\Users\SPiat\Desktop\Projet Parking\C++\lectureplaque\Project2.cbproj</Transaction>
-    <Transaction>2019/03/14 10:20:40.000.083,C:\Users\SPiat\Desktop\Projet Parking\C++\lectureplaque\Lectureplaque.cbproj=C:\Users\SPiat\Desktop\Projet Parking\C++\lectureplaque\Project2.cbproj</Transaction>
-    <Transaction>2019/03/14 10:20:40.000.053,C:\Users\SPiat\Desktop\Projet Parking\C++\lectureplaque\LectureplaquePCH1.h=C:\Users\SPiat\Desktop\Projet Parking\C++\lectureplaque\Project2PCH1.h</Transaction>
-    <Transaction>2019/03/14 10:34:08.000.867,C:\Users\SPiat\Desktop\Projet Parking\C++\lectureplaque\LectureplaquePCH1.h=C:\Users\SPiat\Desktop\Projet Parking\C++\lectureplaque\PlateReadingPCH1.h</Transaction>
-    <Transaction>2019/03/14 10:34:08.000.888,C:\Users\SPiat\Desktop\Projet Parking\C++\lectureplaque\Lectureplaque.cbproj=C:\Users\SPiat\Desktop\Projet Parking\C++\lectureplaque\PlateReading.cbproj</Transaction>
+    <Transaction>2019/03/08 16:04:15.000.975,C:\Users\SPiat\Documents\Embarcadero\Studio\Projets\Lecture_plaque.cpp=C:\Users\SPiat\Documents\Embarcadero\Studio\Projets\Unit2.cpp</Transaction>
+    <Transaction>2019/03/08 16:04:15.000.975,C:\Users\SPiat\Documents\Embarcadero\Studio\Projets\Lecture_plaque.h=C:\Users\SPiat\Documents\Embarcadero\Studio\Projets\Unit2.h</Transaction>
+    <Transaction>2019/03/08 16:25:52.000.659,C:\Users\SPiat\Desktop\Projet Parking\C++\lectureplaque\Lecture_plaque.h=C:\Users\SPiat\Documents\Embarcadero\Studio\Projets\Lecture_plaque.h</Transaction>
+    <Transaction>2019/03/08 16:25:52.000.987,C:\Users\SPiat\Desktop\Projet Parking\C++\lectureplaque\Unit1.cpp=C:\Users\SPiat\Documents\Embarcadero\Studio\Projets\Unit1.cpp</Transaction>
+    <Transaction>2019/03/08 16:25:52.000.987,C:\Users\SPiat\Desktop\Projet Parking\C++\lectureplaque\Unit1.h=C:\Users\SPiat\Documents\Embarcadero\Studio\Projets\Unit1.h</Transaction>
+    <Transaction>2019/03/08 16:25:52.000.659,C:\Users\SPiat\Desktop\Projet Parking\C++\lectureplaque\Lecture_plaque.cpp=C:\Users\SPiat\Documents\Embarcadero\Studio\Projets\Lecture_plaque.cpp</Transaction>
+    <Transaction>2019/03/08 16:25:52.000.987,C:\Users\SPiat\Desktop\Projet Parking\C++\lectureplaque\Unit1.dfm=C:\Users\SPiat\Documents\Embarcadero\Studio\Projets\Unit1.dfm</Transaction>
+    <Transaction>2019/03/08 16:25:53.000.563,C:\Users\SPiat\Desktop\Projet Parking\C++\lectureplaque\Project2PCH1.h=C:\Users\SPiat\Documents\Embarcadero\Studio\Projets\Project2PCH1.h</Transaction>
+    <Transaction>2019/03/08 16:25:54.000.315,C:\Users\SPiat\Desktop\Projet Parking\C++\lectureplaque\Project2.cbproj=C:\Users\SPiat\Documents\Embarcadero\Studio\Projets\Project2.cbproj</Transaction>
+    <Transaction>2019/03/14 10:20:40.000.053,C:\Users\SPiat\Desktop\Projet Parking\C++\lectureplaque\Project2PCH1.h=C:\Users\SPiat\Desktop\Projet Parking\C++\lectureplaque\LectureplaquePCH1.h</Transaction>
+    <Transaction>2019/03/14 10:20:40.000.083,C:\Users\SPiat\Desktop\Projet Parking\C++\lectureplaque\Project2.cbproj=C:\Users\SPiat\Desktop\Projet Parking\C++\lectureplaque\Lectureplaque.cbproj</Transaction>
+    <Transaction>2019/03/14 10:34:08.000.888,C:\Users\SPiat\Desktop\Projet Parking\C++\lectureplaque\PlateReading.cbproj=C:\Users\SPiat\Desktop\Projet Parking\C++\lectureplaque\Lectureplaque.cbproj</Transaction>
+    <Transaction>2019/03/14 10:34:08.000.867,C:\Users\SPiat\Desktop\Projet Parking\C++\lectureplaque\PlateReadingPCH1.h=C:\Users\SPiat\Desktop\Projet Parking\C++\lectureplaque\LectureplaquePCH1.h</Transaction>
     <Transaction>2019/03/15 16:12:53.000.688,C:\Users\SPiat\Desktop\Projet Parking\C++\lectureplaque\Lecture_plaque.cpp=</Transaction>
-    <Transaction>2019/04/03 13:50:09.925,=\\PARKING_PROJET\Parking_Projet\git\ihm supervision\solene\lectureplaque\Lecture_plaque.cpp</Transaction>
-    <Transaction>2019/04/03 13:55:29.635,=\\PARKING_PROJET\Parking_Projet\git\ihm supervision\Sabrina\TCP_IP_Serveur.cpp</Transaction>
+    <Transaction>2019/04/03 13:50:09.000.925,=\\PARKING_PROJET\Parking_Projet\git\ihm supervision\solene\lectureplaque\Lecture_plaque.cpp</Transaction>
+    <Transaction>2019/04/03 13:55:29.000.635,=\\PARKING_PROJET\Parking_Projet\git\ihm supervision\Sabrina\TCP_IP_Serveur.cpp</Transaction>
   </Transactions>
 </BorlandProject>

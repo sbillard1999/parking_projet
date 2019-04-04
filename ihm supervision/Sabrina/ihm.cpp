@@ -243,7 +243,7 @@ void __fastcall Tdemarrage::demarrageprogClick(TObject *Sender)
 			plaquebase.clear();
 			//plaquelu = lecture.Lire_acquisition();
 
-			tcp->Ecriture(client,"lire_plaque\r\n");
+			//tcp->Ecriture(client,"lire_plaque\r\n");
 			//serv->activation(serveur);
 
 			access.lecture_access();
@@ -273,8 +273,8 @@ void __fastcall Tdemarrage::demarrageprogClick(TObject *Sender)
 			UnicodeString etat = "ouverture";
 			tcp->Ecriture(client, etat);
 			//string plaquelu = lecture.Lire_acquisition();
-			tcp->Ecriture(client,"lire_plaque\r\n");
-			serv->activation(serveur);
+			//tcp->Ecriture(client,"lire_plaque\r\n");
+			//serv->activation(serveur);
 
 			access.lecture_access();
 			plaquebase = access.getimmatriculation();
@@ -350,6 +350,7 @@ void __fastcall Tdemarrage::buttonrechercheClick(TObject *Sender)
 	bddproprietaire.clear();
 	bddplaque.clear();
 	bddhorodatage.clear();
+    titre->Caption = "Affichage des accès par vehicule";
 
 	access.lecture_access_vehicule(editrecherche->Text);
 
